@@ -10,7 +10,9 @@ import Bio from "./qcomps/bios";
 import ToDoList from "./qcomps/todos";
 import Profile2 from "./components/profile_props";
 import Gallery1 from "./qcomps/gallery_props";
-
+import Holder from "./components/square";
+import PackingList from "./components/props_item";
+import List from "./qcomps/list_keys_id";
 
 export default function Home() {
   return (
@@ -41,6 +43,15 @@ export default function Home() {
       </div>
       <div className={styles.main}>
         <Gallery1 />
+      </div>
+      <div className={styles.main}>
+        <Holder />
+      </div>
+      <div className={styles.main}>
+        <PackingList />
+      </div>
+      <div className={styles.main}>
+        <List />
       </div>
 
     </div>
