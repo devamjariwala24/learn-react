@@ -8,6 +8,9 @@ import Profile1 from "./qcomps/profile_mistake";
 import MyComp from "./qcomps/firstcomp";
 import Bio from "./qcomps/bios";
 import ToDoList from "./qcomps/todos";
+import Profile2 from "./components/profile_props";
+import Gallery1 from "./qcomps/gallery_props";
+
 
 export default function Home() {
   return (
@@ -32,6 +35,12 @@ export default function Home() {
       </div>
       <div className={styles.main}>
         <ToDoList />
+      </div>
+      <div className={styles.main}>
+        <Profile2 />
+      </div>
+      <div className={styles.main}>
+        <Gallery1 />
       </div>
 
     </div>

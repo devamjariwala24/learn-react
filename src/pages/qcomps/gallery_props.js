@@ -1,13 +1,13 @@
-export default function Gallery() {
+export default function Gallery1() {
   return (
     <div>
       <h1>Notable Scientists</h1>
       <section className="profile">
-        <h2>Maria Skłodowska-Curie</h2>
+        <h2>Marie Skłodowska-Curie</h2>
         <img
           className="avatar"
           src='https://i.imgur.com/szV5sdGs.jpg'
-          alt="Maria Skłodowska-Curie"
+          alt="Marie Skłodowska-Curie"
           width={70}
           height={70}
         />
