@@ -12,7 +12,9 @@ import Profile2 from "./components/profile_props";
 import Gallery1 from "./qcomps/gallery_props";
 import Holder from "./components/square";
 import PackingList from "./components/props_item";
-import List from "./qcomps/list_keys_id";
+// import List from "./qcomps/list_keys_id";
+import RecipeList from "./qcomps/recipes";
+
 
 export default function Home() {
   return (
@@ -50,8 +52,11 @@ export default function Home() {
       <div className={styles.main}>
         <PackingList />
       </div>
-      <div className={styles.main}>
+      {/* <div className={styles.main}>
         <List />
+      </div> */}
+      <div className={styles.main}>
+        <RecipeList />
       </div>
 
     </div>

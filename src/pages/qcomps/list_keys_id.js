@@ -17,7 +17,8 @@ function getImageUrl(imageId) {
 }
 export default function List() {
   const listItems = people.map(person =>
-    <li>
+    <li key = {person.id}>
+      <image src = {getImageUrl(person.imageId)}></image>
     </li>
   );
   return <ul>{listItems}</ul>;
