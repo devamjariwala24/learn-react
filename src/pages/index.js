@@ -14,6 +14,10 @@ import Holder from "./components/square";
 import PackingList from "./components/props_item";
 // import List from "./qcomps/list_keys_id";
 import RecipeList from "./qcomps/recipes";
+import MenuBar from "./qcomps/menuBar";
+import GalleryS from "./components/whyState";
+import GallerySt from "./components/whyState";
+import PersonData from "./components/stateObj"
 
 
 export default function Home() {
@@ -52,11 +56,23 @@ export default function Home() {
       <div className={styles.main}>
         <PackingList />
       </div>
-      {/* <div className={styles.main}>
+       {/* <div className={styles.main}>
         <List />
-      </div> */}
+      </div>  */}
       <div className={styles.main}>
         <RecipeList />
+      </div>
+      <div className={styles.main}>
+        <MenuBar/>
+      </div>
+      <div className={styles.main}>
+        <GalleryS/>
+      </div> 
+       <div className={styles.main}>
+        <GallerySt/>
+      </div> 
+      <div className={styles.main}> 
+        <PersonData/>
       </div>
 
     </div>
