@@ -21,7 +21,7 @@ import PersonData from "./components/stateObj";
 import FeedbackForm from "./qcomps/thankYouCrash";
 import Counter from "./components/snapshot";
 import Form from "./components/snapshot2";
-
+import Counter1 from "./components/queueUpdates";
 
 export default function Home() {
   return (
@@ -85,6 +85,9 @@ export default function Home() {
       </div>
       <div style={{ height: "10px" }} className={styles.main}> 
         <Form/>
+      </div>
+      <div style={{ height: "10px" }} className={styles.main}> 
+        <Counter1/>
       </div>
 
     </div>
