@@ -22,6 +22,8 @@ import FeedbackForm from "./qcomps/thankYouCrash";
 import Counter from "./components/snapshot";
 import Form from "./components/snapshot2";
 import Counter1 from "./components/queueUpdates";
+import RequestTracker from "./qcomps/shoppingCart";
+import Scoreboard from "./qcomps/updObjectsForm";
 
 export default function Home() {
   return (
@@ -61,35 +63,40 @@ export default function Home() {
       </div>
       <div className={styles.main}>
         <List />
-      </div>  
+      </div>
       <div className={styles.main}>
         <RecipeList />
       </div>
       <div className={styles.main}>
-        <MenuBar/>
+        <MenuBar />
       </div>
       <div className={styles.main}>
-        <GalleryS/>
-      </div> 
-       <div className={styles.main}>
-        <GallerySt/>
-      </div> 
-      <div className={styles.main}> 
-        <PersonData/>
+        <GalleryS />
       </div>
-      <div className={styles.main}> 
-        <FeedbackForm/>
+      <div className={styles.main}>
+        <GallerySt />
       </div>
-      <div style={{ height: "10px" }} className={styles.main}> 
-        <Counter/>
+      <div className={styles.main}>
+        <PersonData />
       </div>
-      <div style={{ height: "10px" }} className={styles.main}> 
-        <Form/>
+      <div className={styles.main}>
+        <FeedbackForm />
       </div>
-      <div style={{ height: "10px" }} className={styles.main}> 
-        <Counter1/>
+      <div style={{ height: "10px" }} className={styles.main}>
+        <Counter />
       </div>
-
+      <div style={{ height: "10px" }} className={styles.main}>
+        <Form />
+      </div>
+      <div style={{ textAlign: "center" }}>
+        <Counter1 />
+      </div>
+      <div style={{ textAlign: "center", marginTop: "15px" }}>
+        <RequestTracker />
+      </div>
+      <div style={{ height: "10px" }} className={styles.main}>
+        <Scoreboard/>
+      </div>
     </div>
   );
 }
