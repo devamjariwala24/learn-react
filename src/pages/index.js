@@ -17,7 +17,10 @@ import RecipeList from "./qcomps/recipes";
 import MenuBar from "./qcomps/menuBar";
 import GalleryS from "./components/whyState";
 import GallerySt from "./components/whyState";
-import PersonData from "./components/stateObj"
+import PersonData from "./components/stateObj";
+import FeedbackForm from "./qcomps/thankYouCrash";
+import Counter from "./components/snapshot";
+import Form from "./components/snapshot2";
 
 
 export default function Home() {
@@ -73,6 +76,15 @@ export default function Home() {
       </div> 
       <div className={styles.main}> 
         <PersonData/>
+      </div>
+      <div className={styles.main}> 
+        <FeedbackForm/>
+      </div>
+      <div style={{ height: "10px" }} className={styles.main}> 
+        <Counter/>
+      </div>
+      <div style={{ height: "10px" }} className={styles.main}> 
+        <Form/>
       </div>
 
     </div>
