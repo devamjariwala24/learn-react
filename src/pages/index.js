@@ -3,11 +3,20 @@
 // import { Inter } from 'next/font/google'
 import styles from '@/styles/Home.module.css'
 import Profile from './components/profile'
-
-export default function Home() {
-  return (
+import List from './qcomps/artistsRemoveArr'
+import BucketList from './qcomps/arrObj'
+const Home = () => (
+  <>
     <div className={styles.main}>
-        <Profile />
+      <Profile />
     </div>
-  )
-}
+    <div className={styles.main}>
+      <List />
+    </div>
+    <div className={styles.main}>
+      <BucketList />
+    </div>
+  </>
+);
+
+export default Home;
